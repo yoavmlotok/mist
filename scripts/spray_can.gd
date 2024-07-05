@@ -1,4 +1,5 @@
-extends Node2D
+class_name SprayCan
+extends Item
 
 
 const COOLDOWN_MS = 400
@@ -8,9 +9,6 @@ var last_shot_time = -401
 @onready var pressed_sprite = $Pressed
 @onready var unpressed_sprite = $Unpressed
 @onready var particles = $CPUParticles2D
-
-func _ready():
-	pass
 
 func _process(_delta):
 	if !get_meta("usable"):

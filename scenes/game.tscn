@@ -1,14 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://danmyogm38ys7"]
+[gd_scene load_steps=5 format=3 uid="uid://danmyogm38ys7"]
 
 [ext_resource type="PackedScene" uid="uid://b6b8utdcw80pn" path="res://scenes/player.tscn" id="1_50d06"]
 [ext_resource type="Texture2D" uid="uid://d1hd3ufgm0dbr" path="res://sprites/Base.png" id="1_htyt7"]
+[ext_resource type="PackedScene" uid="uid://drcpxx764ds8h" path="res://scenes/shield.tscn" id="3_gsje5"]
+[ext_resource type="PackedScene" uid="uid://ykygxa831rsj" path="res://scenes/spray_can.tscn" id="4_tb3wj"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_50d06")]
+position = Vector2(993, 1020)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="House" type="Sprite2D" parent="."]
-position = Vector2(917, 944)
+[node name="House" type="StaticBody2D" parent="."]
+position = Vector2(1007, 1001)
+
+[node name="Sprite2D" type="Sprite2D" parent="House"]
 texture = ExtResource("1_htyt7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House"]
+polygon = PackedVector2Array(68, -50, 92, -82, 255, -52, 256, 257, -255, 258, -255, -51, -123, -83, -99, -51, -97, 100, 69, 98)
+
+[node name="Shield" parent="." instance=ExtResource("3_gsje5")]
+position = Vector2(1236, 572)
+
+[node name="SprayCan" parent="." instance=ExtResource("4_tb3wj")]
+position = Vector2(588, 731)

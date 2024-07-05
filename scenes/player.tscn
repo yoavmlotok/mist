@@ -1,9 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6b8utdcw80pn"]
+[gd_scene load_steps=7 format=3 uid="uid://b6b8utdcw80pn"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_ln82g"]
 [ext_resource type="Texture2D" uid="uid://clbajglakqa2h" path="res://sprites/Player.png" id="1_xjdwt"]
 [ext_resource type="Script" path="res://scripts/right_hand.gd" id="3_qjff8"]
 [ext_resource type="Script" path="res://scripts/left_hand.gd" id="4_y5kya"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_awgvi"]
+radius = 55.0364
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b8nk0"]
 radius = 55.0364
@@ -11,15 +14,17 @@ radius = 55.0364
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_ln82g")
-metadata/has_spray_can = true
+metadata/has_spray_can = false
 metadata/has_shield = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_awgvi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_xjdwt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_b8nk0")
 
 [node name="RightHand" type="Node2D" parent="."]
 position = Vector2(40, -40)
@@ -28,3 +33,8 @@ script = ExtResource("3_qjff8")
 [node name="LeftHand" type="Node2D" parent="."]
 position = Vector2(-40, -40)
 script = ExtResource("4_y5kya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b8nk0")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

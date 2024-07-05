@@ -4,6 +4,9 @@ extends CharacterBody2D
 const SPEED = 300.0
 const SPRINT_MULTIPLIER = 1.6
 
+@onready var left_hand = $LeftHand
+@onready var right_hand = $RightHand
+
 func _process(_delta):
 	var mouse_position = get_viewport().get_mouse_position()
 	mouse_position += position - get_viewport_rect().size / 2.0
@@ -14,7 +17,7 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("sprint"):
 		speed = speed * SPRINT_MULTIPLIER
-		
+	
 	var x_direction = Input.get_axis("move_left", "move_right")
 	var y_direction = Input.get_axis("move_up", "move_down")
 	
@@ -36,3 +39,23 @@ func _physics_process(_delta):
 		velocity.y = move_toward(velocity.y, 0, speed)
 
 	move_and_slide()
+
+func _on_area_2d_area_entered(area):
+	if !(area is Item):
+		return
+	
+	if area is SprayCan && !get_meta("has_spray_can"):
+		set_meta("has_spray_can", true)
+		
+		area.get_parent().remove_child(area)
+		right_hand.add_child(area)
+		
+		area._on_picked_up()
+		return
+	if area is Shield && !get_meta("has_shield"):
+		set_meta("has_shield", true)
+		
+		area.get_parent().remove_child(area)
+		left_hand.add_child(area)
+		
+		area._on_picked_up()

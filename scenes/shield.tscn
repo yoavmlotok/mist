@@ -1,12 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://drcpxx764ds8h"]
+[gd_scene load_steps=4 format=3 uid="uid://drcpxx764ds8h"]
 
-[ext_resource type="Texture2D" uid="uid://chl3jm3n3m2ll" path="res://sprites/Shield.png" id="1_pda6t"]
+[ext_resource type="Texture2D" uid="uid://chl3jm3n3m2ll" path="res://sprites/Shield.png" id="1_fckg7"]
+[ext_resource type="Script" path="res://scripts/shield.gd" id="1_t5ila"]
 
-[node name="Shield" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p0yt"]
+size = Vector2(101.484, 39.442)
+
+[node name="Shield" type="Area2D"]
+monitoring = false
+script = ExtResource("1_t5ila")
 metadata/usable = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-5, -30)
-rotation = -0.359538
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("1_pda6t")
+position = Vector2(-9.72, -18.565)
+rotation = -0.455531
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_fckg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, -10)
+rotation = -0.455531
+shape = SubResource("RectangleShape2D_4p0yt")
