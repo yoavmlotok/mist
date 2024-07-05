@@ -4,12 +4,12 @@ extends CharacterBody2D
 const SPEED = 300.0
 const SPRINT_MULTIPLIER = 1.6
 
+@onready var camera = $Camera2D
 @onready var left_hand = $LeftHand
 @onready var right_hand = $RightHand
 
 func _process(_delta):
-	var mouse_position = get_viewport().get_mouse_position()
-	mouse_position += position - get_viewport_rect().size / 2.0
+	var mouse_position = get_viewport().get_mouse_position() - get_viewport_transform().origin
 	rotation = position.angle_to_point(mouse_position) + PI / 2.0
 
 func _physics_process(_delta):
