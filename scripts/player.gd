@@ -28,17 +28,15 @@ func _physics_process(_delta):
 		x_direction /= combined_direction
 		y_direction /= combined_direction
 	
-	if x_direction:
-		velocity.x = x_direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+	velocity = velocity.move_toward(Vector2(0, 0), SPEED)
 	
-	if y_direction:
+	if x_direction && abs(velocity.x) < abs(x_direction * speed):
+		velocity.x = x_direction * speed
+	if y_direction && abs(velocity.y) < abs(y_direction * speed):
 		velocity.y = y_direction * speed
-	else:
-		velocity.y = move_toward(velocity.y, 0, speed)
-
+	
 	move_and_slide()
+	
 
 func _on_area_2d_area_entered(area):
 	if !(area is Item):
