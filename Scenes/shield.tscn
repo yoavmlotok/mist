@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://drcpxx764ds8h"]
+
+[ext_resource type="Texture2D" uid="uid://chl3jm3n3m2ll" path="res://Sprites/Shield.png" id="1_qo0u4"]
+
+[node name="Shield" type="Node2D"]
+metadata/usable = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5, -30)
+rotation = -0.359538
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_qo0u4")

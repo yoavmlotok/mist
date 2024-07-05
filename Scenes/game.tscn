@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://danmyogm38ys7"]
+
+[ext_resource type="PackedScene" uid="uid://b6b8utdcw80pn" path="res://Scenes/player.tscn" id="1_50d06"]
+[ext_resource type="Texture2D" uid="uid://d1hd3ufgm0dbr" path="res://Sprites/Base.png" id="1_htyt7"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_50d06")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="House" type="Sprite2D" parent="."]
+position = Vector2(917, 944)
+texture = ExtResource("1_htyt7")
