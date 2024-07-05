@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcxo7wq4xb0qs"
-path="res://.godot/imported/Tilemap.png-6633f810a87a2792e45694a120c7eb2f.ctex"
+uid="uid://d56vk0i81csy"
+path="res://.godot/imported/Yellow_Rock.png-a7c4b390d6659ba8146fa0804ecdd043.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tilemap.png"
-dest_files=["res://.godot/imported/Tilemap.png-6633f810a87a2792e45694a120c7eb2f.ctex"]
+source_file="res://sprites/Yellow_Rock.png"
+dest_files=["res://.godot/imported/Yellow_Rock.png-a7c4b390d6659ba8146fa0804ecdd043.ctex"]
 
 [params]
 

@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://ykygxa831rsj"]
 
-[ext_resource type="Texture2D" uid="uid://deh821veqd2kh" path="res://Sprites/Spray_Can_Pressed.png" id="1_emkyv"]
-[ext_resource type="Texture2D" uid="uid://5r4ehrbbk437" path="res://Sprites/Spray_Can_Unpressed.png" id="1_tjuf1"]
-[ext_resource type="Script" path="res://Scenes/spray_can.gd" id="1_w5e23"]
-[ext_resource type="Texture2D" uid="uid://iof65xhfm8gm" path="res://Sprites/Pink_Smoke.png" id="2_vlq8u"]
+[ext_resource type="Script" path="res://scenes/spray_can.gd" id="1_lhsbh"]
+[ext_resource type="Texture2D" uid="uid://iof65xhfm8gm" path="res://sprites/Pink_Smoke.png" id="2_g6aaa"]
+[ext_resource type="Texture2D" uid="uid://deh821veqd2kh" path="res://sprites/Spray_Can_Pressed.png" id="3_a7g3o"]
+[ext_resource type="Texture2D" uid="uid://5r4ehrbbk437" path="res://sprites/Spray_Can_Unpressed.png" id="4_fj4mw"]
 
 [node name="SprayCan" type="Node2D"]
-script = ExtResource("1_w5e23")
+script = ExtResource("1_lhsbh")
 metadata/usable = false
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(0, -24.945)
 amount = 12
 lifetime = 0.2
-texture = ExtResource("2_vlq8u")
+texture = ExtResource("2_g6aaa")
 direction = Vector2(0, -1)
 spread = 35.91
 gravity = Vector2(0, 0)
@@ -25,9 +25,9 @@ scale_amount_max = 0.05
 [node name="Pressed" type="Sprite2D" parent="."]
 position = Vector2(4, 0)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("1_emkyv")
+texture = ExtResource("3_a7g3o")
 
 [node name="Unpressed" type="Sprite2D" parent="."]
 position = Vector2(4, 0)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("1_tjuf1")
+texture = ExtResource("4_fj4mw")

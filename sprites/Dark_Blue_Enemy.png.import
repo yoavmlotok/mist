@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm063sa8l2v45"
-path="res://.godot/imported/Yellow_Enemy.png-4f21de5371595178bf582e667083324a.ctex"
+uid="uid://nhrierngrigs"
+path="res://.godot/imported/Dark_Blue_Enemy.png-509ff5406532e8e2a9bc4c0548c6f907.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Yellow_Enemy.png"
-dest_files=["res://.godot/imported/Yellow_Enemy.png-4f21de5371595178bf582e667083324a.ctex"]
+source_file="res://sprites/Dark_Blue_Enemy.png"
+dest_files=["res://.godot/imported/Dark_Blue_Enemy.png-509ff5406532e8e2a9bc4c0548c6f907.ctex"]
 
 [params]
 

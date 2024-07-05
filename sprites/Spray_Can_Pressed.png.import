@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d56vk0i81csy"
-path="res://.godot/imported/Yellow_Rock.png-2a00c0ef2c0877f44e7c5c19c5ed688b.ctex"
+uid="uid://deh821veqd2kh"
+path="res://.godot/imported/Spray_Can_Pressed.png-663d68ee6e9cf5982daf964fed15c657.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Yellow_Rock.png"
-dest_files=["res://.godot/imported/Yellow_Rock.png-2a00c0ef2c0877f44e7c5c19c5ed688b.ctex"]
+source_file="res://sprites/Spray_Can_Pressed.png"
+dest_files=["res://.godot/imported/Spray_Can_Pressed.png-663d68ee6e9cf5982daf964fed15c657.ctex"]
 
 [params]
 

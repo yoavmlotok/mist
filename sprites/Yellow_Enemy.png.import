@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deh821veqd2kh"
-path="res://.godot/imported/Spray_Can_Pressed.png-7e1c04d6de66bfd98b0683b67ff147c4.ctex"
+uid="uid://bm063sa8l2v45"
+path="res://.godot/imported/Yellow_Enemy.png-ded5ab5f6e4e4fc9273a78670a0327ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Spray_Can_Pressed.png"
-dest_files=["res://.godot/imported/Spray_Can_Pressed.png-7e1c04d6de66bfd98b0683b67ff147c4.ctex"]
+source_file="res://sprites/Yellow_Enemy.png"
+dest_files=["res://.godot/imported/Yellow_Enemy.png-ded5ab5f6e4e4fc9273a78670a0327ea.ctex"]
 
 [params]
 

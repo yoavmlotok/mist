@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpg3ixap80vma"
-path="res://.godot/imported/Blue_Fire.png-b30525fc7f21d32f20951d8be6cc21c6.ctex"
+uid="uid://iof65xhfm8gm"
+path="res://.godot/imported/Pink_Smoke.png-47e677610d7905cc1faf9cbff9e29e20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Blue_Fire.png"
-dest_files=["res://.godot/imported/Blue_Fire.png-b30525fc7f21d32f20951d8be6cc21c6.ctex"]
+source_file="res://sprites/Pink_Smoke.png"
+dest_files=["res://.godot/imported/Pink_Smoke.png-47e677610d7905cc1faf9cbff9e29e20.ctex"]
 
 [params]
 

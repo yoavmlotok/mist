@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nhrierngrigs"
-path="res://.godot/imported/Dark_Blue_Enemy.png-389a00fdd80c8abdcd03426921c0ac0a.ctex"
+uid="uid://h8b73fjvk2kx"
+path="res://.godot/imported/Gray_Turret.png-8dbbb6b117751a7772e20ad9ca64a3cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Dark_Blue_Enemy.png"
-dest_files=["res://.godot/imported/Dark_Blue_Enemy.png-389a00fdd80c8abdcd03426921c0ac0a.ctex"]
+source_file="res://sprites/Gray_Turret.png"
+dest_files=["res://.godot/imported/Gray_Turret.png-8dbbb6b117751a7772e20ad9ca64a3cb.ctex"]
 
 [params]
 

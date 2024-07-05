@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5r4ehrbbk437"
-path="res://.godot/imported/Spray_Can_Unpressed.png-2b8497334fe9ad10556f36ca95e5be5c.ctex"
+uid="uid://dttimgiyj80w1"
+path="res://.godot/imported/Pink_Turret.png-4ca934899cef858e629cc877d6b9260a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Spray_Can_Unpressed.png"
-dest_files=["res://.godot/imported/Spray_Can_Unpressed.png-2b8497334fe9ad10556f36ca95e5be5c.ctex"]
+source_file="res://sprites/Pink_Turret.png"
+dest_files=["res://.godot/imported/Pink_Turret.png-4ca934899cef858e629cc877d6b9260a.ctex"]
 
 [params]
 
