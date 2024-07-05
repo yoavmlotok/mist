@@ -48,7 +48,7 @@ func _on_area_2d_area_entered(area):
 		set_meta("has_spray_can", true)
 		
 		area.get_parent().remove_child(area)
-		right_hand.add_child(area)
+		right_hand.call_deferred("add_child", area)
 		
 		area._on_picked_up()
 		return
@@ -56,6 +56,6 @@ func _on_area_2d_area_entered(area):
 		set_meta("has_shield", true)
 		
 		area.get_parent().remove_child(area)
-		left_hand.add_child(area)
+		left_hand.call_deferred("add_child", area)
 		
 		area._on_picked_up()
