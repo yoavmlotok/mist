@@ -5,7 +5,10 @@ const SPEED = 300.0
 const SPRINT_MULTIPLIER = 1.6
 
 func _process(_delta):
-	rotation = position.angle_to_point(get_viewport().get_mouse_position()) + PI / 2.0
+	var mouse_position = get_viewport().get_mouse_position()
+	var viewport_size = get_viewport_rect().size
+	mouse_position += position - viewport_size / 2.0
+	rotation = position.angle_to_point(mouse_position) + PI / 2.0
 
 func _physics_process(_delta):
 	var speed = SPEED
